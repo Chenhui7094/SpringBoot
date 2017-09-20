@@ -1,0 +1,7 @@
+1、SpringBoot中注册servlet
+2、SpringBoot中注册Filterg过滤器
+3、SpringBoot中注册Listener监听器
+4、SpringBoot中注册使用Interceptor拦截器
+5、在项目服务启动的时候就去加载一些数据或做一些事情这样的需求。为了解决这样的问题，Spring Boot 为我们提供了一个方法，通过实现接口 CommandLineRunner 来实现。
+6、使用自定义的XXX.properties配置文件
+7、SpringBoot使用@ComponentScan
