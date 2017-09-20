@@ -1,0 +1,11 @@
+1、SpringBoot的helloworld的例子
+2、SpringBoot配置datasources的例子
+3、SpringBoot使用jpa和JdbcTemplate的例子
+4、SpringBoot修改端口号和ContentPath的例子
+5、SpringBoot处理静态资源的例子
+6、SpringBoot使用定时任务的例子
+7、SpringBoot使用Druid的例子
+8、SpringBoot普通类调用bean的例子
+9、SpringBoot使用thymeleaf的例子
+10、SpringBoot使用FastJson解析json的例子
+11、SpringBoot全局异常捕捉的例子

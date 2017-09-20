@@ -1,0 +1,1 @@
+访问静态资源的优先级顺序：resources > resources > static > public  (已进行测试)
