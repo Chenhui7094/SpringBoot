@@ -1,0 +1,7 @@
+1、jedis pool中timeout的设置要根据业务的响应时间
+2、jedis pool中MaxTotal的设置要根据jmeter压力测试工具，用多个线程访问一个url，多次测试得到应用qps的平均值以及此时的客户端连接个数。在同向对比线上单个应用的qps
+
+db.getCollection('201610online').aggregate({$match:{"deleteflag":true}},
+{$sort:{"ctime":-1}},{$limit:1000},
+{$group:{"_id":"dev",ctime:{$first:"$ctime"},sum:{$sum:1}}})
+
