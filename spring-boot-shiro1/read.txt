@@ -1,0 +1,8 @@
+1、我们随便访问index,login 以及任何一个界面，无需登录也可以进行访问，
+但是这不是我们所想要的，我们想要的是希望在用户没有登录的情况下，
+跳转login页面进行登录。那么这个时候Shiro就闪亮登场了。
+2、集成shiro大概分这么一个步骤：
+(a) pom.xml中添加Shiro依赖；
+(b) 注入Shiro Factory和SecurityManager。
+(c) 身份认证
+(d) 权限控制
