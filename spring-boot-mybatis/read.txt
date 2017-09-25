@@ -1,0 +1,2 @@
+1、整合mybatis和mysql数据库，实现分页，整合swagger
+2、使用AOP统一处理请求日志。
