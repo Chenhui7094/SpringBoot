@@ -3,6 +3,7 @@ package com.birdsh.chen.controller;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.birdsh.chen.bean.Demo;
+import com.birdsh.chen.dynamic.TargetDataSource;
+import com.birdsh.chen.service.TestService;
 
 @RestController
 public class TestController {
@@ -27,6 +32,9 @@ public class TestController {
 	private DataSource dataSource2;
 
 	private JdbcTemplate jdbcTemplate;
+
+	@Resource
+	private TestService testService;
 
 	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
@@ -102,6 +110,18 @@ public class TestController {
 		});
 
 		return "ok.4";
+	}
+
+	@RequestMapping("/test1")
+	@TargetDataSource(value="cc")
+	public String test() {
+		// for(Demo d:testService.getList()){
+		// System.out.println(d);
+		// }
+		for (Demo d : testService.getListByDs1()) {
+			System.out.println(d);
+		}
+		return "ok";
 	}
 
 }
