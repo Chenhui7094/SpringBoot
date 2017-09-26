@@ -1,0 +1,1 @@
+1、SpringBoot动态注入bean和删除bean
