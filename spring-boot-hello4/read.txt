@@ -1,0 +1,7 @@
+1、SpringBoot自定义配置
+2、两种方式:
+①@ConfigurationProperties(prefix = "com.birdsh.company")
+ @Component
+public class CompanyProperties {
+②@Bean
+ @ConfigurationProperties(prefix = "com.birdsh.company")

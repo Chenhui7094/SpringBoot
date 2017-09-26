@@ -1,0 +1,19 @@
+#使用yml格式不会出现乱码，properties格式会出现乱码。
+#公司简称;
+com: 
+  birdsh: 
+    company: 
+      name: 上海波导
+      firstName: 上海
+      logo-path: d:/mail/1.jpg
+      COMPANY_FULLNAME: 上海波导信息技术有限公司
+#公司位置;
+      location: 上海普陀区
+#公司联系方式;
+      mobile: 1234567
+#公司员工人数;
+      employCount: 100
+      employs[0]: 张三
+      employs[1]: 李四
+      employs[2]: 王五
+      
