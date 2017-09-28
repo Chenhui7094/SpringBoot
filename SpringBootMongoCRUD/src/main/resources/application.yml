@@ -1,4 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri:  mongodb://test:test@192.168.122.128:12345/test
