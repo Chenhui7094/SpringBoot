@@ -11,7 +11,7 @@ import com.birdsh.chen.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootMongoCrudApplicationTests {
+public class SpringBootMongodbApplicationTests {
 	@Autowired
     private IStudentDao iStudentDao;
 

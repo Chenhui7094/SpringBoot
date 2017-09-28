@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootMongoCrudApplication {
+public class SpringBootMongodbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootMongoCrudApplication.class, args);
+		SpringApplication.run(SpringBootMongodbApplication.class, args);
 	}
 }
