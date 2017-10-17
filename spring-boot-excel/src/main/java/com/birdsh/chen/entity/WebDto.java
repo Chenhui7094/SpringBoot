@@ -1,5 +1,12 @@
 package com.birdsh.chen.entity;
 
+import com.birdsh.chen.utils.ExcelResources;
+/**
+ * @ClassName: WebDto.java 
+ * @Description:
+ * @author chenhuihui
+ * @time 2017年10月17日下午2:23:52
+ */
 public class WebDto {
 
     //网站名称
@@ -36,5 +43,50 @@ public class WebDto {
                 ", password='" + password + '\'' +
                 ", readCount=" + readCount +
                 '}';
+    }
+
+    @ExcelResources(title="网站名称",order=1)
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @ExcelResources(title="网址",order=2)
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @ExcelResources(title="用户名",order=3)
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    @ExcelResources(title="密码",order=4)
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @ExcelResources(title="日均访问量",order=5)
+    public Integer getReadCount() {
+        return readCount;
+    }
+
+    public void setReadCount(Integer readCount) {
+        this.readCount = readCount;
     }
 }
